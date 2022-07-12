@@ -33,6 +33,11 @@ namespace BlockCity
 
         public int ThreePointersAttempted { get; set; }
 
+        internal int Sum(Func<object, object> p)
+        {
+            throw new NotImplementedException();
+        }
+
         public int ThreePointerMade { get; set; }
 
         public int FreeThrowsAttempted { get; set; }
@@ -42,6 +47,11 @@ namespace BlockCity
         public int GamesPlayed { get; set; } = 1;
 
         internal IEnumerable<object> GroupBy(Func<object, object> p)
+        {
+            throw new NotImplementedException();
+        }
+
+        internal int Max(Func<object, object> value)
         {
             throw new NotImplementedException();
         }
