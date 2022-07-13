@@ -23,7 +23,8 @@ builder.Services.AddCors(options =>
     options.AddPolicy(name: myAllowSpecificOrigins,
         builder =>
         {
-            builder.WithOrigins("https://blockcity.herokuapp.com")
+            builder.WithOrigins("http://localhost:4200",
+                                        "https://blockcity.herokuapp.com")
             .AllowAnyMethod()
             .AllowAnyHeader();
         });
