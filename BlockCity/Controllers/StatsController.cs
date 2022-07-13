@@ -8,11 +8,13 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using BlockCity;
 using BlockCity.Data;
+using System.Web.Http.Cors;
 
 namespace BlockCity.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [EnableCors(origins: "https://blockcity.herokuapp.com", headers: "*", methods: "*")]
     public class StatsController : ControllerBase
     {
         private readonly DataContext _context;
